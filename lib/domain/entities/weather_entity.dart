@@ -9,14 +9,15 @@ class WeatherEntity extends Equatable {
   final int pressure;
   final int humidity;
 
-  const WeatherEntity(
-    this.cityName,
-    this.main,
-    this.description,
-    this.iconCode,
-    this.temperature,
-    this.pressure,
-    this.humidity,
+  const WeatherEntity({
+    required this.cityName,
+    required this.main,
+    required this.description,
+    required this.iconCode,
+    required this.temperature,
+    required this.pressure,
+    required this.humidity,
+  }
   );
 
   @override
