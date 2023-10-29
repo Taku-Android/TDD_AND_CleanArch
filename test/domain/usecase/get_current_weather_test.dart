@@ -2,6 +2,7 @@ import 'package:dartz/dartz.dart';
 import 'package:fluttter_tdd_and_clean_arch/domain/entities/weather_entity.dart';
 import 'package:fluttter_tdd_and_clean_arch/domain/usecases/get_current_weather.dart';
 import 'package:mockito/mockito.dart';
+
 import '../../helpers/test_helper.mocks.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -26,6 +27,17 @@ void main() {
 
   const testCityName = 'New York' ;
 
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   test('should get current weather detail from repository', () async {
     // arrange
     when(mockWeatherRepository.getCurrentWeather(testCityName)).thenAnswer((_) async => const Right(testWeatherModel));
